@@ -329,24 +329,24 @@
             </h3>
             <div class="py-4">
               <p class="text-dark-emphasis">
-                1998 - 2004
+                2020-2021
               </p>
               <h5>
-                Bachelors in Engineering in Information Technology
+                B.Com
               </h5>
-              <p class="text-dark-emphasis">
+              <!-- <p class="text-dark-emphasis">
                 Bachelors in Engineering in Information Technology
-              </p>
+              </p> -->
             </div>
             <p class="text-dark-emphasis">
-              2004 - 2006
+              2017-2019
             </p>
             <h5>
-              Masters in Data Analysis
+              Animation and Video Production Certification
             </h5>
-            <p class="text-dark-emphasis">
+            <!-- <p class="text-dark-emphasis">
               Harvard School of Science and management
-            </p>
+            </p> -->
           </div>
         </div>
 
@@ -462,7 +462,7 @@
             </div><!--section-header-->
           </div>
 
-          <div id="filters" class="button-group d-flex flex-wrap gap-3 justify-content-center py-5" data-aos="fade-up">
+          <!-- <div id="filters" class="button-group d-flex flex-wrap gap-3 justify-content-center py-5" data-aos="fade-up">
             <a href="#" class="btn btn-primary text-decoration-none text-uppercase is-checked"
               data-filter=".photography">Photography</a>
             <a href="#" class="btn btn-primary text-decoration-none text-uppercase" data-filter=".graphicdesign">Graphic
@@ -470,10 +470,21 @@
             <a href="#" class="btn btn-primary text-decoration-none text-uppercase"
               data-filter=".illustrations">Illustrations</a>
             <a href="#" class="btn btn-primary text-decoration-none text-uppercase" data-filter=".branding">Branding</a>
-          </div>
+          </div> -->
         </div>
 
-        <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-4" data-aos="fade-up">
+
+        <div class="container my-5 text-center" style="max-width: 800px;">
+          <h2 class="display-4 fw-bold mb-4" style="color: #222;">👋 About Me</h2>
+          <p class="lead mb-4" style="color: #555;">
+            Here's a quick look at who I am — my background, my journey, and my passion in motion.
+          </p>
+        
+          <!-- Local Video -->
+          <video src="media/about-me.mp4" class="img-fluid rounded-4 shadow" autoplay loop muted playsinline></video>
+        </div>
+        
+        <!-- <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-4" data-aos="fade-up">
           <div class="col mb-4 portfolio-item photography">
             <a href="images/illustration-1.jpg" data-lightbox="illustration-1" data-title="illustration-1"
               title="Sample Caption goes here for Portfolio Item 1."><img src="images/illustration-1.jpg"
@@ -535,7 +546,7 @@
                 class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
 
-        </div>
+        </div> -->
 
         <div class="text-center p-3">
           <a href="index.html" class="btn btn-outline-dark btn-lg mt-3 text-uppercase text-decoration-none">
@@ -823,37 +834,61 @@
     <div class="container">
       <div class="row justify-content-center my-5">
         <div class="col-md-5">
-          <h6>
-            Quick Contact
-          </h6>
-          <h2 class="display-3">
-            Leave a Message
-          </h2>
+          <h6>Quick Contact</h6>
+          <h2 class="display-3">Leave a Message</h2>
           <p>
             Labore accusam in modo compungi, iacentem substantiales um se sed esse haec.
           </p>
         </div>
+  
         <div class="col-md-5">
-          <div class="mb-3">
-            <input type="name" class="form-control p-3 rounded-4" name="name" id="name" aria-describedby="nameHelpId"
-              placeholder="your name" />
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control p-3 rounded-4" name="email" id="email" aria-describedby="emailHelpId"
-              placeholder="your email" />
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control p-3 rounded-4" name="your message" placeholder="your message" id="message" rows="3"></textarea>
-          </div>
-          <div class="d-grid">
-            <button type="button" class="btn btn-dark btn-lg text-uppercase rounded-4">
-              Submit
-            </button>
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="d0d0e1b7-0d37-40b4-b65e-8dc9f7e01486" />
+  
+            <!-- Custom Email Subject -->
+            <input type="hidden" name="subject" value="New Response from the portfolio website" />
+  
+            <!-- Name -->
+            <div class="mb-3">
+              <input type="text" class="form-control p-3 rounded-4" name="name" id="name" required placeholder="your name" />
+            </div>
+  
+            <!-- Email -->
+            <div class="mb-3">
+              <input type="email" class="form-control p-3 rounded-4" name="email" id="email" required placeholder="your email" />
+            </div>
+  
+            <!-- Message -->
+            <div class="mb-3">
+              <textarea class="form-control p-3 rounded-4" name="message" id="message" rows="3" required placeholder="your message"></textarea>
+            </div>
+  
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+  
+            <!-- Submit -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-dark btn-lg text-uppercase rounded-4">Submit</button>
+            </div>
+          </form>
+  
+          <!-- Toast -->
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="formToast" class="toast align-items-center text-bg-success border-0" role="alert">
+              <div class="d-flex">
+                <div class="toast-body">
+                  Form submitted successfully!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- <footer id="footer" class="bg-black text-white py-5">
     <div class="container-sm">
@@ -958,6 +993,31 @@
 
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="js/script.js"></script>
+
+  <!-- Bootstrap Toast JS + Form Handler -->
+<script>
+  const form = document.getElementById('contact-form');
+  const toast = new bootstrap.Toast(document.getElementById('formToast'));
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // prevent default form behavior
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData
+    });
+
+    if (response.ok) {
+      toast.show();
+      form.reset(); // clear form
+    } else {
+      alert("Form submission failed. Please try again.");
+    }
+  });
+</script>
+
 </body>
 
 </html>
