@@ -118,6 +118,15 @@ h2,h3,h4,h5,h6 {
     font-family: var(--body-font); 
     line-height: 80%;
 }
+.typewriter {
+    font-weight: 900;
+    font-family: var(--body-font, sans-serif);
+    line-height: 80%;
+    overflow: hidden;
+    white-space: pre-line;
+    /* Responsive font-size */
+    font-size: clamp(2.5rem, 6vw, 6rem); /* 2.5rem small - 6rem large */
+  }
 .display-2,
 .display-3,
 .display-4,

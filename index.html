@@ -94,9 +94,9 @@
       <div class="container-fluid">
         <div class="d-flex align-items-center g-4">
           <a class="navbar-brand d-flex" href="index.html">
-            <img src="images/logo.png" class="img-fluid" id="logo" width="184" >
+            <img src="images/logo.png" class="img-fluid" id="logo" width="184">
           </a>
-          <div class="icon px-5">
+          <!-- <div class="icon px-5">
             <a href="#" class="text-decoration-none">
               <svg class="skype" width="24" height="24">
                 <use xlink:href="#skype"></use>
@@ -147,7 +147,7 @@
                 <use xlink:href="#behance"></use>
               </svg>
             </a>
-          </div>
+          </div> -->
         </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -157,7 +157,8 @@
             </svg>
           </span>
         </button>
-        <div class="offcanvas offcanvas-end text-white bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end text-white bg-black" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <button type="button" class="btn-close btn-close-white ms-3" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
@@ -168,32 +169,33 @@
                 <a class="nav-link active text-uppercase ls-4 text-white" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Portfolio 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Portfolio
                 </a>
               </li>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Single Portfolio 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Single
+                  Portfolio
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Single Post 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Single Post
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Styles 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Styles
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Blog 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Blog
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Team 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Team
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Contact 
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Contact
                 </a>
               </li>
             </ul>
@@ -211,9 +213,9 @@
           <p class="fs-4">
             Video Editor
           </p>
-          <h1 class="display-1">
-            Vijay <br> Thakkar
-          </h1>
+          <div class="container ">
+            <h1 id="typewriterHeading" class="typewriter"></h1>
+          </div>
         </div>
         <div class="row text-uppercase bg-black rounded-4 p-3 mt-5">
           <div class="col-md-4">
@@ -232,14 +234,14 @@
                 3000+
               </h2>
               <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                Videos 
+                Videos
               </p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="d-flex align-items-center gap-4">
               <h2 class="display-2 text-light">
-                1000+ 
+                1000+
               </h2>
               <p class="text-light-emphasis justify-content-center m-0 ls-4">
                 Projects
@@ -453,11 +455,14 @@
 
         <div class="row justify-content-center">
 
-          <div class="col-lg-6" data-aos="fade-up">
+          <div class="col-lg-10" data-aos="fade-up">
             <div class="section-header text-center">
               <h4 class="fw-bold fs-2 txt-fx slide-up">
-                As a passionate life coach and entrepreneur, I am deeply committed to guiding individuals on their journey to success and fulfillment. 
-                My mission is to empower others through creativity, knowledge, and practical advice.
+                As a seasoned Video Producer, I bring over 13 years of experience in creating compelling content. With a
+                proven track record of producing 3000+ videos across 1000+ projects, my expertise spans all stages of
+                production, from pre-production to post-production, and even marketing.
+                I take pride in understanding the project’s needs, planning meticulously, and delivering high-quality
+                videos within budget and deadlines.
               </h4>
             </div><!--section-header-->
           </div>
@@ -474,21 +479,35 @@
         </div>
 
 
-        <div class="container my-5 text-center" style="max-width: 800px;">
-          <!-- <h2 class="display-4 fw-bold mb-4" style="color: #222;">👋 About Me</h2>
-          <p class="lead mb-4" style="color: #555;">
-            Here's a quick look at who I am — my background, my journey, and my passion in motion.
-          </p> -->
-        
-          <!-- Local Video -->
-          <div style="max-width: 1000px; margin: 0 auto;">
-            <video src="video/Showreel-Compilation.mp4"
-                   class="w-100 rounded-4 shadow"
-                   autoplay loop muted playsinline>
-            </video>
+        <div class="container my-5 d-flex justify-content-center">
+          <div class="card shadow-lg rounded-4 p-4 fade-in" style="max-width: 1000px; background: #efeaea;">
+
+            <!-- Video Section -->
+            <div class="text-center position-relative mb-4">
+              <video id="aboutMeVideo" src="video/Showreel-Compilation.mp4" class="w-100 rounded-4" autoplay loop muted
+                playsinline>
+              </video>
+
+              <!-- Mute/Unmute Button -->
+              <button id="muteButton" class="btn btn-dark position-absolute top-0 end-0 m-3 rounded-5"
+                style="opacity: 0.8;">
+                Unmute
+              </button>
+            </div>
+
+            <!-- View All Works Button -->
+            <div class="text-center">
+              <a href="https://1drv.ms/f/c/f0437874e0bdac9c/EpysveB0eEMggPD6VAEAAAABlzJ7bV8jebTMvXnODPWB4A"
+                class="btn btn-outline-dark btn-lg mt-3 text-uppercase text-decoration-none" target="_blank"
+                rel="noopener noreferrer">
+                View All Works
+              </a>
+            </div>
+
           </div>
         </div>
-        
+
+
         <!-- <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-4" data-aos="fade-up">
           <div class="col mb-4 portfolio-item photography">
             <a href="images/illustration-1.jpg" data-lightbox="illustration-1" data-title="illustration-1"
@@ -552,15 +571,15 @@
           </div>
 
         </div> -->
-        <div class="text-center p-3">
+        <!-- <div class="text-center p-3">
           <a href="https://1drv.ms/f/c/f0437874e0bdac9c/EpysveB0eEMggPD6VAEAAAABlzJ7bV8jebTMvXnODPWB4A" 
              class="btn btn-outline-dark btn-lg mt-3 text-uppercase text-decoration-none" 
              target="_blank" 
              rel="noopener noreferrer">
             View All Works
           </a>
-        </div>
-        
+        </div> -->
+
 
       </div>
   </section>
@@ -844,43 +863,46 @@
         <div class="col-md-5">
           <h6>Quick Contact</h6>
           <h2 class="display-3">Leave a Message</h2>
-          <p>
+          <!-- <p>
             Labore accusam in modo compungi, iacentem substantiales um se sed esse haec.
-          </p>
+          </p> -->
         </div>
-  
+
         <div class="col-md-5">
           <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
             <!-- Web3Forms Access Key -->
             <input type="hidden" name="access_key" value="d0d0e1b7-0d37-40b4-b65e-8dc9f7e01486" />
-  
+
             <!-- Custom Email Subject -->
             <input type="hidden" name="subject" value="New Response from the portfolio website" />
-  
+
             <!-- Name -->
             <div class="mb-3">
-              <input type="text" class="form-control p-3 rounded-4" name="name" id="name" required placeholder="your name" />
+              <input type="text" class="form-control p-3 rounded-4" name="name" id="name" required
+                placeholder="your name" />
             </div>
-  
+
             <!-- Email -->
             <div class="mb-3">
-              <input type="email" class="form-control p-3 rounded-4" name="email" id="email" required placeholder="your email" />
+              <input type="email" class="form-control p-3 rounded-4" name="email" id="email" required
+                placeholder="your email" />
             </div>
-  
+
             <!-- Message -->
             <div class="mb-3">
-              <textarea class="form-control p-3 rounded-4" name="message" id="message" rows="3" required placeholder="your message"></textarea>
+              <textarea class="form-control p-3 rounded-4" name="message" id="message" rows="3" required
+                placeholder="your message"></textarea>
             </div>
-  
+
             <!-- Honeypot Spam Protection -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-  
+
             <!-- Submit -->
             <div class="d-grid">
               <button type="submit" class="btn btn-dark btn-lg text-uppercase rounded-4">Submit</button>
             </div>
           </form>
-  
+
           <!-- Toast -->
           <div class="toast-container position-fixed bottom-0 end-0 p-3">
             <div id="formToast" class="toast align-items-center text-bg-success border-0" role="alert">
@@ -896,7 +918,7 @@
       </div>
     </div>
   </section>
-  
+
 
   <!-- <footer id="footer" class="bg-black text-white py-5">
     <div class="container-sm">
@@ -1002,29 +1024,84 @@
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="js/script.js"></script>
 
-  <!-- Bootstrap Toast JS + Form Handler -->
-<script>
-  const form = document.getElementById('contact-form');
-  const toast = new bootstrap.Toast(document.getElementById('formToast'));
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault(); // prevent default form behavior
-
-    const formData = new FormData(form);
-
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData
-    });
-
-    if (response.ok) {
-      toast.show();
-      form.reset(); // clear form
-    } else {
-      alert("Form submission failed. Please try again.");
+  <!-- Fade-in Animation Styles -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
     }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+<script>
+  const text = "Vijay \nThakkar"; // Text with a line break
+  const heading = document.getElementById('typewriterHeading');
+  let index = 0;
+
+  function typeWriter() {
+    if (index < text.length) {
+      if (text[index] === "\n") {
+        heading.innerHTML += "<br>"; // Handle line break
+      } else {
+        heading.innerHTML += text[index];
+      }
+      index++;
+      setTimeout(typeWriter, 150); // typing speed (lower = faster)
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", typeWriter);
+</script>
+
+
+<!-- JavaScript for Fade-in and Mute/Unmute -->
+<script>
+  // Fade-in when card scrolls into view
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+  observer.observe(document.querySelector('.fade-in'));
+
+  // Mute/Unmute functionality
+  const video = document.getElementById('aboutMeVideo');
+  const muteButton = document.getElementById('muteButton');
+
+  muteButton.addEventListener('click', () => {
+    video.muted = !video.muted;
+    muteButton.textContent = video.muted ? 'Unmute' : 'Mute';
   });
 </script>
+  <!-- Bootstrap Toast JS + Form Handler -->
+  <script>
+    const form = document.getElementById('contact-form');
+    const toast = new bootstrap.Toast(document.getElementById('formToast'));
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault(); // prevent default form behavior
+
+      const formData = new FormData(form);
+
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData
+      });
+
+      if (response.ok) {
+        toast.show();
+        form.reset(); // clear form
+      } else {
+        alert("Form submission failed. Please try again.");
+      }
+    });
+  </script>
 
 </body>
 
